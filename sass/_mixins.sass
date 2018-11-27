@@ -19,3 +19,23 @@
         height: 100%
         z-index: -1
         background: rgba($primary-color, $background-opacity)
+
+// Media Query Mixins  
+@mixin mediaSm
+  @media screen and (max-width: 500px)
+    @content
+
+// only applies when screen is <= 768px  
+@mixin mediaMd
+  @media screen and (max-width: 768px)
+    @content
+
+// only applies when screen is 769px<=media<=1170px  
+@mixin mediaLg
+  @media screen and (min-width: 769) and (max-width: 1170px)
+    @content
+
+// only applies when screen is > 1171px  
+@mixin mediaXl
+  @media screen and (min-width: 1171px)
+    @content  
