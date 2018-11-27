@@ -1,42 +1,14 @@
-// Fonts
-@font-face
-  font-family: 'proxima_novabold'
-  src: url(../fonts/proxima/proxima_nova_bold-webfont.woff2), url(../fonts/proxima/proxima_nova_bold-webfont.woff)
-
-@font-face
-  font-family: 'proxima_nova_thextrabold'
-  src: url(../fonts/proxima/proxima_nova_extrabold-webfont.woff2), url(../fonts/proxima/proxima_nova_extrabold-webfont.woff)
-
-@font-face
-  font-family: 'proxima_nova_ltlight'
-  src: url(../fonts/proxima/proxima_nova_light-webfont.woff2), url(../fonts/proxima/proxima_nova_light-webfont.woff)
-
-@font-face
-  font-family: 'proxima_novaregular'
-  src: url(../fonts/proxima/proxima_nova_regular-webfont.woff2), url(../fonts/proxima/proxima_nova_regular-webfont.woff)    
-
-@font-face
-  font-family: 'proxima_novasemibold'
-  src: url(../fonts/proxima/proxima_nova_semibold-webfont.woff2), url(../fonts/proxima/proxima_nova_semibold-webfont.woff)  
-
-@font-face
-  font-family: 'proxima_novathin'
-  src: url(../fonts/proxima/proxima_nova_thin-webfont.woff2), url(../fonts/proxima/proxima_nova_thin-webfont.woff)  
-
-// Variables
-$primary-color: #444
-$secondary-color: #339AF0
-
-//mixins are like css functions
-// call mixins by -> @include mixin()  
-@mixin easeOut
-  transition: all 0.5s ease-out
+@import 'fonts'
+@import 'mixins'
+@import 'variables'
+@import 'menu'
 
 
 * //global settings
   box-sizing: border-box
 
-body 
+body
+  @include background 
   background: $primary-color
   color: #fff
   height: 100%
