@@ -22,6 +22,7 @@
   font-family: 'proxima_novathin';
   src: url(../fonts/proxima/proxima_nova_thin-webfont.woff2), url(../fonts/proxima/proxima_nova_thin-webfont.woff); }
 
+/* CENTERING */
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -121,8 +122,10 @@
 body {
   background: #444;
   color: #fff;
-  height: 100%;
+  height: 100vh;
   margin: 0;
+  margin: 0;
+  padding: 0;
   font-family: 'proxima_novabold';
   line-height: 1.5; }
   body#bg-img {
@@ -138,6 +141,9 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(68, 68, 68, 0.85); }
+
+#particles-js {
+  height: 100%; }
 
 h1, h2, h3 {
   margin: 0;
@@ -209,7 +215,7 @@ main {
 .projects1 {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(1, 1fr); }
   .projects1 img {
     width: 100%;
     border: 3px #fff solid; }
@@ -217,6 +223,23 @@ main {
       opacity: 0.5;
       border-color: #339AF0;
       transition: all 0.5s ease-out; }
+
+.video-container {
+  position: relative;
+  padding-bottom: 52.25%;
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+  max-width: 1600px;
+  min-width: 300px; }
+
+video {
+  width: 100%;
+  border: 3px #fff solid; }
+  video:hover {
+    opacity: 0.5;
+    border-color: #339AF0;
+    transition: all 0.5s ease-out; }
 
 .boxes {
   display: flex;
